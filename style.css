@@ -1,0 +1,108 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+}
+
+.navbar li {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 10px 20px;
+}
+
+.section1 {
+  padding: 40px 0;
+}
+
+.topleft {
+  flex-basis: 50%;
+}
+
+.topleft img {
+  max-width: 100%;
+  height: auto;
+}
+
+.topright img {
+  max-width: 100%;
+  height: auto;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-number {
+  margin-top: 10px;
+}
+
+.section2 {
+  padding: 40px 0;
+}
+
+.boxes {
+  flex-wrap: wrap;
+}
+
+.box {
+  flex-basis: calc(33.33% - 20px);
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.section3 {
+  padding: 40px 0;
+}
+
+.table {
+  width: 100%;
+}
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Media Queries for Responsive Design */
+
+@media screen and (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+  }
+
+  .navbar li {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+
+  .topleft,
+  .topright {
+      flex-basis: 100%;
+      text-align: center;
+  }
+
+  .box {
+      flex-basis: 100%;
+      margin-right: 0;
+  }
+}
